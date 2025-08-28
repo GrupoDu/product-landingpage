@@ -1,7 +1,5 @@
 import { LuInstagram, LuLinkedin } from "react-icons/lu";
 import { FaWhatsapp } from "react-icons/fa";
-import Whatsapp from "../../../public/whatsapp.svg";
-import Image from "next/image";
 import styles from "./styles.module.scss";
 import React from "react";
 import Link from "next/link";
