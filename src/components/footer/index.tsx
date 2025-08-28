@@ -19,18 +19,19 @@ const Footer = () => {
           </p>
           <div className={styles.socialsIcons}>
             <Link href={""} target="_blank">
-              <LuInstagram color="white" />
+              <LuInstagram color="white" className={styles.icons} />
             </Link>
             <Link href={""} target="_blank">
-              <LuLinkedin color="white" />
+              <LuLinkedin color="white" className={styles.icons} />
             </Link>
             <Link href={"https://wa.me/5581999040919"} target="_blank">
-              <FaWhatsapp color="white" />
+              <FaWhatsapp color="white" className={styles.icons} />
             </Link>
           </div>
         </div>
-        <div className={styles.servicos}>
+        <div className={styles.termos}>
           <h3>Termos e políticas</h3>
+          <hr />
           <ul>
             <li>
               <Link href={"#"} className={styles.links}>
@@ -54,8 +55,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <hr className={styles.hr} />
-      <div className={styles.middle}></div>
       <div className={styles.down}>
         <span>&copy; 2025 Grupo Du Car. Todos os direitos reservados</span>
       </div>
