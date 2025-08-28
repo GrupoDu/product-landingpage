@@ -1,0 +1,59 @@
+.page {
+  flex: 1;
+
+  .header {
+    background: #503e9e;
+    background: radial-gradient(
+      circle at 70% 100%,
+      rgba(80, 62, 158, 1) 0%,
+      rgba(75, 19, 102, 1) 61%,
+      rgba(25, 29, 49, 1) 100%
+    );
+    background-position: 50% 100%;
+    padding: 40px 54px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      background: linear-gradient(#ffffff, #cbb9ff);
+      color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+      width: 100%;
+      text-align: center;
+    }
+
+    .textHeader {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        flex: 1;
+
+        h3,
+        p {
+            color: white;
+        }
+
+        h3 {
+            font-size: 48px;
+        }
+
+        hr {
+            opacity: 0.3;
+            color: white;
+        }
+
+        p {
+            font-size: 24px;
+        }
+    }
+
+    .imagesHeader {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  }
+}
