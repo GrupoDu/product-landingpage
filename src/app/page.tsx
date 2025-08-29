@@ -28,6 +28,7 @@ export default function Home() {
               src={products[1].images[0]}
               alt={products[1].title}
               className={styles.imageHeader}
+              id={styles.jerica}
             />
           </div>
         </div>
