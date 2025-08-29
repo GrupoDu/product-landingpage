@@ -1,6 +1,9 @@
 import Image from "next/image";
 import styles from "./page.module.scss";
 import { products } from "@/data/products";
+import Form from "@/components/form";
+import { FaPhone, FaWhatsapp } from "react-icons/fa";
+import { LuMail } from "react-icons/lu";
 
 export default function Home() {
   return (
@@ -33,6 +36,30 @@ export default function Home() {
           </div>
         </div>
       </header>
+      <div className={styles.formularioContato}>
+        <div className={styles.contatos}>
+          <h3>Solicite seu carrinho de mão</h3>
+          <p>
+            Preencha seus dados e nossa equipe entrará em contato para garantir
+            que você receba exatamente o que procura.
+          </p>
+          <hr />
+          <h3>Outras formas de contato</h3>
+          <div className={styles.contatosIcons}>
+            <FaWhatsapp color="white" className={styles.icon} />
+            <span>(81) 99904-0919</span>
+          </div>
+          <div className={styles.contatosIcons}>
+            <FaPhone color="white" className={styles.icon} />
+            <span>(81) 99904-0919</span>
+          </div>
+          <div className={styles.contatosIcons}>
+            <LuMail color="white" className={styles.icon} />
+            <span>(81) 99904-0919</span>
+          </div>
+        </div>
+        <Form />
+      </div>
     </div>
   );
 }
