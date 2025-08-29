@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import styles from "./styles.module.scss";
+import Button from "../button";
 
 const Form = () => {
   const [email, setEmail] = useState<string>("");
@@ -38,6 +39,7 @@ const Form = () => {
             onChange={(e) => setMensagem(e.target.value)}
           />
         </label>
+        <Button gradient={true}>Solicitar produto</Button>
       </form>
     </div>
   );
