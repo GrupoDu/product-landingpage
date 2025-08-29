@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./page.module.scss";
+import { products } from "@/data/products";
 
 export default function Home() {
   return (
@@ -17,7 +18,18 @@ export default function Home() {
               conforto no manuseio e eficiência no transporte de cargas.
             </p>
           </div>
-          <div className={styles.imagesHeader}></div>
+          <div className={styles.imagesHeader}>
+            <Image
+              src={products[0].images[0]}
+              alt={products[0].title}
+              className={styles.imageHeader}
+            />
+            <Image
+              src={products[1].images[0]}
+              alt={products[1].title}
+              className={styles.imageHeader}
+            />
+          </div>
         </div>
       </header>
     </div>
