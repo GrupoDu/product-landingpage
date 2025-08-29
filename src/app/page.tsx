@@ -55,7 +55,7 @@ export default function Home() {
           </div>
           <div className={styles.contatosIcons}>
             <LuMail color="white" className={styles.icon} />
-            <span>(81) 99904-0919</span>
+            <span>dommetalind@gmail.com</span>
           </div>
         </div>
         <Form />
