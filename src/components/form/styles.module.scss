@@ -1,0 +1,66 @@
+.formContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 0px 0px 10px 0px rgba($color: #000000, $alpha: 0.2);
+  padding: 30px;
+  border-radius: 10px;
+  gap: 40px;
+
+  h2 {
+    font-size: 32px;
+  }
+
+  .formulario {
+    display: grid;
+    grid-template-areas:
+      "nome email"
+      "produto produto"
+      "empresa empresa"
+      "mensagem mensagem";
+    flex: 1;
+    gap: 20px;
+
+    .inputContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      
+      input {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        outline: none;
+      }
+
+      textarea {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        outline: none;
+        resize: none;
+      }
+    }
+
+    .inputNome {
+      grid-area: nome;
+    }
+
+    .inputEmail {
+      grid-area: email;
+    }
+
+    .inputProduto {
+      grid-area: produto;
+    }
+
+    .inputEmpresa {
+      grid-area: empresa;
+    }
+
+    .inputMensagem {
+      grid-area: mensagem;
+    }
+  }
+}
