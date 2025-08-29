@@ -81,6 +81,9 @@ export default function Home() {
           </Link>
         </div>
       </div>
+      <main className={styles.main}>
+        
+      </main>
     </div>
   );
 }

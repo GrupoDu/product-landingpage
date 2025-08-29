@@ -7,7 +7,7 @@ import CarroJerica80 from "@/assets/produtos/carro-jerica-80.png";
 import CarroJerica140 from "@/assets/produtos/carro-jerica-140.png";
 import CarroJerica100 from "@/assets/produtos/carro-jerica-100.png";
 import CarroTransporteBloco from "@/assets/produtos/carro-transporte-bloco.png";
-import CarroTransporteMaterial from "@/assets/produtos/carro-transporte-materia.png";
+import CarroTransporteMaterial from "@/assets/produtos/carro-transporte-materiais.png";
 import CarroGaiola from "@/assets/produtos/carro-gaiola.png";
 import CarroTransporteTambor from "@/assets/produtos/carro-transporte-tambor.png";
 import CarroIcamento from "@/assets/produtos/carro-icamento.png";
