@@ -1,0 +1,30 @@
+.produtoContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+
+  .imagemProduto {
+    flex: 1;
+  }
+
+  h3 {
+    width: 100%;
+  }
+
+  span {
+    font-weight: bold;
+  }
+
+  .button {
+    flex: 1;
+    padding: 16px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    outline: none;
+    border: none;
+    background-color: #35c23a;
+  }
+}
