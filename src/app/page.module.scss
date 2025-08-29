@@ -4,16 +4,16 @@
   .header {
     background: #503e9e;
     background: radial-gradient(
-      circle at 70% 100%,
+      circle at 70% 60%,
       rgba(80, 62, 158, 1) 0%,
-      rgba(75, 19, 102, 1) 61%,
+      rgba(75, 19, 102, 1) 41%,
       rgba(25, 29, 49, 1) 100%
     );
-    background-position: 50% 100%;
-    padding: 40px 54px;
+    padding: 60px 54px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    gap: 100px;
 
     h1 {
       background: linear-gradient(#ffffff, #cbb9ff);
@@ -24,7 +24,11 @@
       text-align: center;
     }
 
-    .textHeader {
+    .textImages {
+      flex: 1;
+      display: flex;
+      
+      .textHeader {
         display: flex;
         flex-direction: column;
         gap: 8px;
@@ -32,28 +36,44 @@
 
         h3,
         p {
-            color: white;
+          color: white;
         }
 
         h3 {
-            font-size: 48px;
+          font-size: 48px;
+          font-weight: 500;
         }
 
         hr {
-            opacity: 0.3;
-            color: white;
+          opacity: 0.3;
+          color: white;
         }
 
         p {
-            font-size: 24px;
+          font-size: 24px;
         }
-    }
-
-    .imagesHeader {
+      }
+      
+      .imagesHeader {
         flex: 1;
         display: flex;
         justify-content: center;
         align-items: center;
+        position: relative;
+        box-sizing: border-box;
+
+        .imageHeader {
+          position: absolute;
+          object-fit: contain;
+          width: 50%;
+          height: fit-content;
+          right: 4em;
+        }
+
+        #jerica {
+          left: 6em;
+        }
+      }
     }
   }
 }
