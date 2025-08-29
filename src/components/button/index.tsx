@@ -10,7 +10,7 @@ type Props = {
 const Button = ({ children, gradient, onClick }: Props) => {
   return (
     <button
-      style={{ backgroundColor: gradient ? "var(--gradient-blue" : "white" }}
+      style={{ background: gradient ? "var(--gradient-blue)" : "white" }}
       className={styles.button}
       onClick={onClick}
     >
