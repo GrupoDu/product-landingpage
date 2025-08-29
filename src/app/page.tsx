@@ -4,6 +4,13 @@ import { products } from "@/data/products";
 import Form from "@/components/form";
 import { FaWhatsapp } from "react-icons/fa";
 import { LuMail, LuPhone } from "react-icons/lu";
+import Button from "@/components/button";
+import {
+  MdFileDownload,
+  MdKeyboard,
+  MdKeyboardArrowRight,
+} from "react-icons/md";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -59,6 +66,20 @@ export default function Home() {
           </div>
         </div>
         <Form />
+      </div>
+      <div className={styles.conhecerProdutos}>
+        <h1>Ainda não conhece nossos produtos?</h1>
+        <div className={styles.buttons}>
+          <Button gradient={true}>
+            <MdFileDownload color="white" />
+            Baixe nosso catálogo completo
+          </Button>
+          <Link href={"https://grupodu.com.br"}>
+            <Button gradient={false}>
+              Conheça o GrupoDu <MdKeyboardArrowRight color="black" />
+            </Button>
+          </Link>
+        </div>
       </div>
     </div>
   );
