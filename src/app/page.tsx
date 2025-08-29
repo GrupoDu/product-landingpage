@@ -7,7 +7,6 @@ import { LuMail, LuPhone } from "react-icons/lu";
 import Button from "@/components/button";
 import {
   MdFileDownload,
-  MdKeyboard,
   MdKeyboardArrowRight,
 } from "react-icons/md";
 import Link from "next/link";
