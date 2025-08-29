@@ -38,7 +38,7 @@ export default function Home() {
       </header>
       <div className={styles.formularioContato}>
         <div className={styles.contatos}>
-          <h3>Solicite seu carrinho de mão</h3>
+          <h2>Solicite seu carrinho de mão</h2>
           <p>
             Preencha seus dados e nossa equipe entrará em contato para garantir
             que você receba exatamente o que procura.
