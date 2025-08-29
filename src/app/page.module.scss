@@ -13,10 +13,10 @@
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    gap: 60px;
 
     h1 {
-      background: linear-gradient(#ffffff, #cbb9ff);
+      background: linear-gradient(90deg, #ffffff, #cbb9ff);
       color: transparent;
       -webkit-background-clip: text;
       background-clip: text;
@@ -50,7 +50,7 @@
         }
 
         p {
-          font-size: 24px;
+          font-size: 20px;
         }
       }
       
