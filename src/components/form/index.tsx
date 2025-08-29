@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from "react";
 import styles from "./styles.module.scss";
 
@@ -10,7 +12,7 @@ const Form = () => {
 
   return (
     <form className={styles.formContainer}>
-      <h3>Formulário para contato</h3>
+      <h2>Formulário para contato</h2>
       <label className={`${styles.inputContainer} ${styles.inputNome}`}>
         <span>Nome Completo</span>
         <input type="text" onChange={(e) => setNome(e.target.value)} />
