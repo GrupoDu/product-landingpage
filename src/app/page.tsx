@@ -2,8 +2,8 @@ import Image from "next/image";
 import styles from "./page.module.scss";
 import { products } from "@/data/products";
 import Form from "@/components/form";
-import { FaPhone, FaWhatsapp } from "react-icons/fa";
-import { LuMail } from "react-icons/lu";
+import { FaWhatsapp } from "react-icons/fa";
+import { LuMail, LuPhone } from "react-icons/lu";
 
 export default function Home() {
   return (
@@ -50,7 +50,7 @@ export default function Home() {
             <span>(81) 99904-0919</span>
           </div>
           <div className={styles.contatosIcons}>
-            <FaPhone color="white" className={styles.icon} />
+            <LuPhone color="white" className={styles.icon} />
             <span>(81) 99904-0919</span>
           </div>
           <div className={styles.contatosIcons}>
