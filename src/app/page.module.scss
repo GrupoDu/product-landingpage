@@ -76,4 +76,45 @@
       }
     }
   }
+
+  .formularioContato {
+    display: flex;
+    padding: 40px;
+    gap: 52px;
+
+    .contatos {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      
+      h2 {
+        font-size: 40px;
+      }
+
+      p {
+        font-size: 20px;
+      }
+
+      .contatosIcons {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+
+        span {
+          font-size: 18px;;
+        }
+
+        .icon {
+          background-color: #4D49CF;
+          object-fit: contain;
+          width: 4em;
+          border-radius: 1em;
+          padding: 1em;
+          box-sizing: border-box;
+          height: fit-content;
+        }
+      }
+    }
+  }
 }
