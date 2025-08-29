@@ -25,16 +25,16 @@ const Form = () => {
         <span>Produto</span>
         <input type="text" onChange={(e) => setProduto(e.target.value)} />
       </label>
+      <label className={`${styles.inputContainer} ${styles.inputEmpresa}`}>
+        <span>Empresa</span>
+        <input type="text" onChange={(e) => setEmpresa(e.target.value)} />
+      </label>
       <label className={`${styles.inputContainer} ${styles.inputMensagem}`}>
         <span>Mensagem</span>
         <textarea
           className={styles.textarea}
           onChange={(e) => setMensagem(e.target.value)}
         />
-      </label>
-      <label className={`${styles.inputContainer} ${styles.inputEmpresa}`}>
-        <span>Empresa</span>
-        <input type="text" onChange={(e) => setEmpresa(e.target.value)} />
       </label>
     </form>
   );
