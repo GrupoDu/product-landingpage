@@ -3,6 +3,12 @@
   --foreground: #171717;
   --font-color: #111827;
   --gray: rgb(187, 187, 187);
+  --gradient-blue: linear-gradient(
+    90deg,
+    rgba(55, 52, 154, 1) 0%,
+    rgba(71, 66, 228, 1) 61%,
+    rgba(55, 52, 154, 1) 100%
+  );
 }
 
 html,
