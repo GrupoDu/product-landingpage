@@ -11,6 +11,7 @@ export const products: Product[] = [
     description: "Descrição do produto 1",
     category: "Carro de mão",
     images: [CarroDeMao],
+    imagesAlt: ["carro de mao"],
   },
   {
     id: 2,
@@ -18,5 +19,6 @@ export const products: Product[] = [
     description: "Descrição do produto 2",
     category: "Carro de mão",
     images: [CarroJerica160],
+    imagesAlt: ["carro jerica 160L"],
   },
 ];
