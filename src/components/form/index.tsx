@@ -16,24 +16,25 @@ const Form = () => {
       <form className={styles.formulario}>
         <label className={`${styles.inputContainer} ${styles.inputNome}`}>
           <span>Nome Completo</span>
-          <input type="text" onChange={(e) => setNome(e.target.value)} />
+          <input type="text" placeholder="Seu nome" onChange={(e) => setNome(e.target.value)} />
         </label>
         <label className={`${styles.inputContainer} ${styles.inputEmail}`}>
           <span>Email</span>
-          <input type="email" onChange={(e) => setEmail(e.target.value)} />
+          <input type="email" placeholder="Seu email" onChange={(e) => setEmail(e.target.value)} />
         </label>
         <label className={`${styles.inputContainer} ${styles.inputProduto}`}>
           <span>Produto</span>
-          <input type="text" onChange={(e) => setProduto(e.target.value)} />
+          <input type="text" placeholder="Produto de interesse" onChange={(e) => setProduto(e.target.value)} />
         </label>
         <label className={`${styles.inputContainer} ${styles.inputEmpresa}`}>
           <span>Empresa</span>
-          <input type="text" onChange={(e) => setEmpresa(e.target.value)} />
+          <input type="text" placeholder="Sua empresa" onChange={(e) => setEmpresa(e.target.value)} />
         </label>
         <label className={`${styles.inputContainer} ${styles.inputMensagem}`}>
           <span>Mensagem</span>
           <textarea
             className={styles.textarea}
+            placeholder="Sua mensagem"
             onChange={(e) => setMensagem(e.target.value)}
           />
         </label>
