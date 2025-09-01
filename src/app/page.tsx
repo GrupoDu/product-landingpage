@@ -4,9 +4,6 @@ import { products } from "@/data/products";
 import Form from "@/components/form";
 import { FaWhatsapp } from "react-icons/fa";
 import { LuMail, LuPhone } from "react-icons/lu";
-import Button from "@/components/button";
-import { MdFileDownload, MdKeyboardArrowRight } from "react-icons/md";
-import Link from "next/link";
 import Produto from "@/components/produto";
 import ConhecendoProdutos from "@/components/conhecerProdutos";
 
