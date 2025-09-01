@@ -8,6 +8,7 @@ import Button from "@/components/button";
 import { MdFileDownload, MdKeyboardArrowRight } from "react-icons/md";
 import Link from "next/link";
 import Produto from "@/components/produto";
+import ConhecendoProdutos from "@/components/conhecerProdutos";
 
 export default function Home() {
   return (
@@ -64,21 +65,7 @@ export default function Home() {
         </div>
         <Form />
       </div>
-      <div className={styles.conhecerProdutos}>
-        <h1>Ainda não conhece nossos produtos?</h1>
-        <div className={styles.buttons}>
-          <Button gradient={true}>
-            <MdFileDownload color="white" className={styles.icon} />
-            Baixe nosso catálogo completo
-          </Button>
-          <Link href={"https://grupodu.com.br"} className={styles.link}>
-            <Button gradient={false}>
-              Conheça o <span style={{ fontWeight: "bold" }}>GrupoDu</span>{" "}
-              <MdKeyboardArrowRight color="black" className={styles.icon} />
-            </Button>
-          </Link>
-        </div>
-      </div>
+      <ConhecendoProdutos />
       <main className={styles.main}>
         {products.map((product) => (
           <Produto
