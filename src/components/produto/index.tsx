@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./styles.module.scss";
 import Image, { StaticImageData } from "next/image";
 import { FaWhatsapp } from "react-icons/fa";
+import Link from "next/link";
 
 type Props = {
   nomeProduto: string;
@@ -16,6 +17,11 @@ const Produto = ({
   descricaoProduto,
   altImagem,
 }: Props) => {
+  const message: string = encodeURIComponent(
+    `Ola, gostaria de saber mais sobre o produto ${nomeProduto}`
+  );
+  const number: string = "5581999040919";
+
   return (
     <div className={styles.produtoContainer}>
       <div className={styles.imageContainer}>
@@ -28,9 +34,9 @@ const Produto = ({
       <h3>{nomeProduto}</h3>
       <span>Descrição</span>
       <p>{descricaoProduto}</p>
-      <button className={styles.button}>
+      <Link href={`https://wa.me/${number}?text=${message}`} target="_blank" className={styles.button}>
         Entrar em contato <FaWhatsapp color="white" className={styles.icon} />
-      </button>
+      </Link>
     </div>
   );
 };
