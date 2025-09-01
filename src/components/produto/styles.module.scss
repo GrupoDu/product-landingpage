@@ -1,11 +1,27 @@
 .produtoContainer {
-  flex: 1;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   height: fit-content;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0px 0px 10px 0px rgba($color: #000000, $alpha: 0.2);
+  padding: 20px;
+  border-radius: 20px;
 
-  .imagemProduto {
+  .imageContainer {
     flex: 1;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+
+    .imagemProduto {
+      object-fit: contain;
+      height: 20em;
+      width: 100%;
+    }
   }
 
   h3 {
@@ -14,15 +30,22 @@
 
   span {
     font-weight: bold;
+    width: 100%;
+  }
+
+  p {
+    width: 100%;
   }
 
   .button {
-    flex: 1;
+    width: 100%;
     padding: 16px 12px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 4px;
+    border-radius: 40px;
+    cursor: pointer;
     outline: none;
     border: none;
     background-color: #35c23a;
