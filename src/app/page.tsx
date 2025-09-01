@@ -5,11 +5,9 @@ import Form from "@/components/form";
 import { FaWhatsapp } from "react-icons/fa";
 import { LuMail, LuPhone } from "react-icons/lu";
 import Button from "@/components/button";
-import {
-  MdFileDownload,
-  MdKeyboardArrowRight,
-} from "react-icons/md";
+import { MdFileDownload, MdKeyboardArrowRight } from "react-icons/md";
 import Link from "next/link";
+import Produto from "@/components/produto";
 
 export default function Home() {
   return (
@@ -82,7 +80,15 @@ export default function Home() {
         </div>
       </div>
       <main className={styles.main}>
-        
+        {products.map((product) => (
+          <Produto
+            key={product.id}
+            nomeProduto={product.title}
+            imagemProduto={product.images[0]}
+            descricaoProduto={product.description}
+            altImagem={product.title}
+          />
+        ))}
       </main>
     </div>
   );
