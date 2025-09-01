@@ -7,6 +7,7 @@ import toast from "react-hot-toast";
 
 const Form = () => {
   const [email, setEmail] = useState<string>("");
+  const [telefone, setTelefone] = useState<string>("");
   const [nome, setNome] = useState<string>("");
   const [mensagem, setMensagem] = useState<string>("");
   const [empresa, setEmpresa] = useState<string>("");
@@ -18,11 +19,20 @@ const Form = () => {
     try {
       const res = await fetch("/api/email", {
         method: "POST",
-        body: JSON.stringify({ email, nome, mensagem, empresa, produto }),
+        body: JSON.stringify({
+          email,
+          nome,
+          mensagem,
+          empresa,
+          produto,
+          telefone,
+        }),
       });
 
       if (res.status === 400)
-        return toast.error("Algo deu errado, estamos resolvendo!");
+        return toast.error(
+          "Algo deu errado, lembre-se de preencher todos os campos!"
+        );
 
       toast.success("Recebemos seu pedido com sucesso!");
     } catch (error) {
@@ -49,6 +59,14 @@ const Form = () => {
             type="email"
             placeholder="Seu email"
             onChange={(e) => setEmail(e.target.value)}
+          />
+        </label>
+        <label className={`${styles.inputContainer} ${styles.inputNumero}`}>
+          <span>Número de celular</span>
+          <input
+            type="text"
+            placeholder="Seu celular"
+            onChange={(e) => setTelefone(e.target.value)}
           />
         </label>
         <label className={`${styles.inputContainer} ${styles.inputProduto}`}>
