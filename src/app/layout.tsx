@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google";
 import "./globals.scss";
 import Footer from "@/components/footer";
 import { Toaster } from "react-hot-toast";
+import Redirecionamento from "@/components/redirecionamento";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -22,9 +23,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <Toaster position="top-center" reverseOrder={false} gutter={8} />
-      <body className={`${poppins.variable}`}>{children}</body>
-      <Footer />
+      <body className={`${poppins.variable}`}>
+        <Toaster position="top-center" reverseOrder={false} gutter={8} />
+        <Redirecionamento />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
