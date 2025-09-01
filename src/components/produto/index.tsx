@@ -34,7 +34,12 @@ const Produto = ({
       <h3>{nomeProduto}</h3>
       <span>Descrição</span>
       <p>{descricaoProduto}</p>
-      <Link href={`https://wa.me/${number}?text=${message}`} target="_blank" className={styles.button}>
+      <Link
+        href={`https://wa.me/${number}?text=${message}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={styles.button}
+      >
         Entrar em contato <FaWhatsapp color="white" className={styles.icon} />
       </Link>
     </div>
