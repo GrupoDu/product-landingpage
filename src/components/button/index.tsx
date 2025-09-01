@@ -5,9 +5,10 @@ type Props = {
   children: React.ReactNode;
   gradient: boolean;
   onClick?: () => void;
+  type?: "button" | "submit" | "reset";
 };
 
-const Button = ({ children, gradient, onClick }: Props) => {
+const Button = ({ children, gradient, onClick, type }: Props) => {
   return (
     <button
       style={{
@@ -16,6 +17,7 @@ const Button = ({ children, gradient, onClick }: Props) => {
       }}
       className={styles.button}
       onClick={onClick}
+      type={type ? type : "button"}
     >
       {children}
     </button>
