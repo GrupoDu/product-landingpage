@@ -68,6 +68,19 @@
           width: 50%;
           height: fit-content;
           right: 4em;
+          animation: entrada 1.2s ease-in-out;
+
+          @keyframes entrada {
+            0% {
+              opacity: 0;
+              transform: translateY(-2em);
+            }
+
+            100% {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
         }
 
         #jerica {
