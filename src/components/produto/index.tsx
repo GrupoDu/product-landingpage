@@ -18,11 +18,13 @@ const Produto = ({
 }: Props) => {
   return (
     <div className={styles.produtoContainer}>
-      <Image
-        src={imagemProduto}
-        alt={altImagem}
-        className={styles.imagemProduto}
-      />
+      <div className={styles.imageContainer}>
+        <Image
+          src={imagemProduto}
+          alt={altImagem}
+          className={styles.imagemProduto}
+        />
+      </div>
       <h3>{nomeProduto}</h3>
       <span>Descrição</span>
       <p>{descricaoProduto}</p>
