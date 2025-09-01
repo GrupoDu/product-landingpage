@@ -29,7 +29,7 @@ const Produto = ({
       <span>Descrição</span>
       <p>{descricaoProduto}</p>
       <button className={styles.button}>
-        Entrar em contato <FaWhatsapp color="white" />
+        Entrar em contato <FaWhatsapp color="white" className={styles.icon} />
       </button>
     </div>
   );
