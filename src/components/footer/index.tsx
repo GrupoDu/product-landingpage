@@ -32,7 +32,7 @@ const Footer = () => {
           <hr />
           <ul>
             <li>
-              <Link href={"#"} className={styles.links}>
+              <Link href={"https://www.grupodu.com.br"} className={styles.links}>
                 Sobre nós
               </Link>
             </li>
