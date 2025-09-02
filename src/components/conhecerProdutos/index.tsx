@@ -21,7 +21,7 @@ const ConhecendoProdutos = () => {
         </Button>
         <Link href={"https://grupodu.com.br"} className={styles.link}>
           <Button gradient={false}>
-            Conheça o <span style={{ fontWeight: "bold" }}>GrupoDu</span>{" "}
+            Conheça o <strong>Grupo Du</strong>{" "}
             <MdKeyboardArrowRight color="black" className={styles.icon} />
           </Button>
         </Link>
