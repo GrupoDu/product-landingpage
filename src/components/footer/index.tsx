@@ -1,10 +1,17 @@
+"use client";
+
 import { LuInstagram, LuLinkedin } from "react-icons/lu";
 import { FaWhatsapp } from "react-icons/fa";
 import styles from "./styles.module.scss";
 import React from "react";
 import Link from "next/link";
+import toast from "react-hot-toast";
 
 const Footer = () => {
+  const handleClick = () => {
+    toast.error("Funcionalidade em desenvolvimento!");
+  };
+
   return (
     <div className={styles.footerContainer}>
       <div className={styles.upper}>
@@ -32,7 +39,10 @@ const Footer = () => {
           <hr />
           <ul>
             <li>
-              <Link href={"https://www.grupodu.com.br"} className={styles.links}>
+              <Link
+                href={"https://www.grupodu.com.br"}
+                className={styles.links}
+              >
                 Sobre nós
               </Link>
             </li>
@@ -49,7 +59,7 @@ const Footer = () => {
           <p>Receba atualizações sobre nossos projetos e novidades do grupo</p>
           <div className={styles.inputEmail}>
             <input type="email" name="email" placeholder="Seu e-mail" />
-            <button>Inscrever</button>
+            <button onClick={handleClick}>Inscrever</button>
           </div>
         </div>
       </div>
