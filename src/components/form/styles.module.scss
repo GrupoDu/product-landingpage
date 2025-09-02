@@ -27,19 +27,13 @@
       flex-direction: column;
       gap: 10px;
 
-      input {
+      input,
+      textarea,
+      select {
         padding: 10px;
         border: 1px solid #ccc;
         border-radius: 5px;
         outline: none;
-      }
-
-      textarea {
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        outline: none;
-        resize: none;
       }
     }
 
