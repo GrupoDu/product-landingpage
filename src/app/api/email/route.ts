@@ -41,7 +41,7 @@ export const POST = async (req: Request) => {
         <h3>Empresa</h3>
         <p>${empresa ? empresa : "Empresa não informada"}</p>
         <hr />
-        <h3>Mensagem</h3>
+        <h3>Mensagem adicional</h3>
         <p>${mensagem}</p>
         <hr />
         <br />
