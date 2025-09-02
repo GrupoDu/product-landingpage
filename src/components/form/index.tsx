@@ -11,7 +11,8 @@ const Form = () => {
   const [nome, setNome] = useState<string>("");
   const [mensagem, setMensagem] = useState<string>("");
   const [empresa, setEmpresa] = useState<string>("");
-  const [produto, setProduto] = useState<string>("");
+  const [modelo, setModelo] = useState<string>("");
+  const [quantidade, setQuantidade] = useState<number>(0);
 
   const handleEmail = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -20,12 +21,13 @@ const Form = () => {
       const res = await fetch("/api/email", {
         method: "POST",
         body: JSON.stringify({
-          email,
           nome,
-          mensagem,
-          empresa,
-          produto,
+          email,
           telefone,
+          empresa,
+          modelo,
+          quantidade,
+          mensagem,
         }),
       });
 
@@ -69,12 +71,20 @@ const Form = () => {
             onChange={(e) => setTelefone(e.target.value)}
           />
         </label>
-        <label className={`${styles.inputContainer} ${styles.inputProduto}`}>
-          <span>Produto</span>
+        <label className={`${styles.inputContainer} ${styles.inputModelo}`}>
+          <span>Modelo do produto</span>
           <input
             type="text"
             placeholder="Produto de interesse"
-            onChange={(e) => setProduto(e.target.value)}
+            onChange={(e) => setModelo(e.target.value)}
+          />
+        </label>
+        <label className={`${styles.inputContainer} ${styles.inputQuantidade}`}>
+          <span>Quantidade</span>
+          <input
+            type="number"
+            placeholder="Quantidade"
+            onChange={(e) => setQuantidade(Number(e.target.value))}
           />
         </label>
         <label className={`${styles.inputContainer} ${styles.inputEmpresa}`}>
