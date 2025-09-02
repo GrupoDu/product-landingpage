@@ -4,6 +4,7 @@ import "./globals.scss";
 import Footer from "@/components/footer";
 import { Toaster } from "react-hot-toast";
 import Redirecionamento from "@/components/redirecionamento";
+import WsIcon from "@/components/wsicon";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -26,6 +27,7 @@ export default function RootLayout({
       <body className={`${poppins.variable}`}>
         <Toaster position="top-center" reverseOrder={false} gutter={8} />
         <Redirecionamento />
+        <WsIcon />
         {children}
         <Footer />
       </body>
