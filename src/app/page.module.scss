@@ -189,5 +189,34 @@
         }
       }
     }
+
+    .formularioContato {
+      flex-direction: column;
+      padding: 20px;
+
+      .contatos {
+        h2 {
+          font-size: 32px;
+          text-align: center;
+        }
+
+        p {
+          font-size: 16px;
+          text-align: center;
+        }
+
+        hr {
+          display: none;
+        }
+
+        h3 {
+          display: none;
+        }
+
+        .contatosIcons {
+          display: none;
+        }
+      }
+    }
   }
 }
