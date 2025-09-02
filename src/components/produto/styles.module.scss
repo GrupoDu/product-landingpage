@@ -90,3 +90,17 @@
 //     transform: scale(1);
 //   }
 // }
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .produtoContainer {
+    padding: 15px;
+    gap: 15px;
+    // border-radius: 10px;
+
+    .imageContainer {
+      .imagemProduto {
+        height: 14em;
+      }
+    }
+  }
+}
