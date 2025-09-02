@@ -13,7 +13,7 @@ export const POST = async (req: Request) => {
     const { nome, email, telefone, empresa, quantidade, modelo, mensagem } =
       body;
 
-    if (!nome || !email || !telefone || !modelo || !quantidade || !mensagem) {
+    if (!nome || !email || !telefone || !modelo || !quantidade) {
       return NextResponse.json(
         { error: "Por favor, preencha todos os campos" },
         { status: 400 }
@@ -42,7 +42,7 @@ export const POST = async (req: Request) => {
         <p>${empresa ? empresa : "Empresa não informada"}</p>
         <hr />
         <h3>Mensagem adicional</h3>
-        <p>${mensagem}</p>
+        <p>${mensagem ? mensagem : "Nenhuma mensagem adicional"}</p>
         <hr />
         <br />
         <h4>Contato enviado pelo site de produto.</h4>
