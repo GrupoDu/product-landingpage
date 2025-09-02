@@ -10,9 +10,10 @@ export const POST = async (req: Request) => {
   });
   try {
     const body = await req.json();
-    const { nome, email, telefone, empresa, produto, mensagem } = body;
+    const { nome, email, telefone, empresa, quantidade, modelo, mensagem } =
+      body;
 
-    if (!nome || !email || !telefone || !produto || !mensagem) {
+    if (!nome || !email || !telefone || !modelo || !quantidade || !mensagem) {
       return NextResponse.json(
         { error: "Por favor, preencha todos os campos" },
         { status: 400 }
@@ -31,8 +32,11 @@ export const POST = async (req: Request) => {
         <h3>Email</h3>
         <p>${email}</p>
         <hr />
-        <h3>Telefon</h3>
-        <p>${produto}</p>
+        <h3>modelo do produto</h3>
+        <p>${modelo}</p>
+        <hr />
+        <h3>Quantidade</h3>
+        <p>${quantidade}</p>
         <hr />
         <h3>Empresa</h3>
         <p>${empresa ? empresa : "Empresa não informada"}</p>
