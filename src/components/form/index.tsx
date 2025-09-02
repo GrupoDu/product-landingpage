@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import styles from "./styles.module.scss";
 import Button from "../button";
 import toast from "react-hot-toast";
+import { products } from "@/data/products";
 
 const Form = () => {
   const [email, setEmail] = useState<string>("");
@@ -53,6 +54,7 @@ const Form = () => {
             type="text"
             placeholder="Seu nome"
             onChange={(e) => setNome(e.target.value)}
+            required
           />
         </label>
         <label className={`${styles.inputContainer} ${styles.inputEmail}`}>
@@ -61,6 +63,7 @@ const Form = () => {
             type="email"
             placeholder="Seu email"
             onChange={(e) => setEmail(e.target.value)}
+            required
           />
         </label>
         <label className={`${styles.inputContainer} ${styles.inputNumero}`}>
@@ -69,15 +72,25 @@ const Form = () => {
             type="text"
             placeholder="Seu celular"
             onChange={(e) => setTelefone(e.target.value)}
+            required
           />
         </label>
         <label className={`${styles.inputContainer} ${styles.inputModelo}`}>
           <span>Modelo do produto</span>
-          <input
-            type="text"
-            placeholder="Produto de interesse"
+          <select
             onChange={(e) => setModelo(e.target.value)}
-          />
+            defaultValue=""
+            required
+          >
+            <option value="" disabled selected>
+              Escolha o modelo
+            </option>
+            {products.map((product) => (
+              <option key={product.title} value={product.title}>
+                {product.title}
+              </option>
+            ))}
+          </select>
         </label>
         <label className={`${styles.inputContainer} ${styles.inputQuantidade}`}>
           <span>Quantidade</span>
@@ -85,6 +98,7 @@ const Form = () => {
             type="number"
             placeholder="Quantidade"
             onChange={(e) => setQuantidade(Number(e.target.value))}
+            required
           />
         </label>
         <label className={`${styles.inputContainer} ${styles.inputEmpresa}`}>
