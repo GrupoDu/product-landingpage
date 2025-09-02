@@ -46,9 +46,9 @@
         gap: 0.8em;
 
         .icons {
-            object-fit: contain;
-            height: fit-content;
-            width: 1.5em;
+          object-fit: contain;
+          height: fit-content;
+          width: 1.5em;
         }
       }
     }
@@ -209,29 +209,8 @@
         }
       }
 
-      .servicos,
-      .contatos,
-      .segmentos {
+      .termos {
         width: 100%;
-      }
-    }
-
-    .hr {
-      display: none;
-    }
-
-    .middle {
-      flex-direction: column;
-      padding: 2em;
-      gap: 1.8em;
-
-      .infosContatos {
-        width: 100%;
-      }
-
-      .linksRapidos {
-        width: 100%;
-        display: none;
       }
 
       .emailNovidade {
@@ -246,7 +225,7 @@
     }
 
     .down {
-      padding: 2em 1em;
+      padding: 1em 1em;
       span {
         font-size: 0.8em;
       }
