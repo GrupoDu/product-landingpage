@@ -17,7 +17,7 @@
     grid-template-areas:
       "nome email"
       "numero empresa"
-      "produto produto"
+      "modelo quantidade"
       "mensagem mensagem";
     flex: 1;
     gap: 20px;
@@ -51,8 +51,12 @@
       grid-area: email;
     }
 
-    .inputProduto {
-      grid-area: produto;
+    .inputModelo {
+      grid-area: modelo;
+    }
+
+    .inputQuantidade {
+      grid-area: quantidade;
     }
 
     .inputEmpresa {
@@ -96,5 +100,4 @@
       }
     }
   }
-  
 }
